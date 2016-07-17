@@ -76,6 +76,8 @@ DEFAULT_INCLUDES = -I. -I`$(CYGPATH_W) $(srcdir)`
 
 libcoinsoplex_la_LDFLAGS = $(LT_LDFLAGS)
 
+libcoinsoplex_la_LIBADD = $(SOPLEX_LIBS)
+
 thirdpartyincludedir = $(includedir)/coin/ThirdParty
 thirdpartyinclude_HEADERS = \
   $(srcdir)/soplex/src/array.h \
